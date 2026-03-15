@@ -2,8 +2,9 @@ import java.util.*;
 class Homepage{
     void Homepage(){
         System.out.println(" 1) Decimal To Binary");
-        System.out.println(" 2) Decimal To Hexadecimal");
-        System.out.println(" 3) Binary To Decimal");
+        System.out.println(" 2) Decimal To Octal");
+        System.out.println(" 3) Decimal To Hexadecimal");
+        System.out.println(" 4) Binary To Decimal");
         System.out.print("Enter Your Choice : ");
     }
 }
@@ -22,12 +23,18 @@ public class Main {
                    System.out.println("Binary =" + binary);
                    break;
             case 2:
-                System.out.print("Enter Decimal Number: ");
-                int decimal2 = input.nextInt();
-                String hexadecimal = Integer.toHexString(decimal2);
-                System.out.println("Hexadecimal = " + hexadecimal);
+                System.out.println("Enter The Decimal Number ");
+                int Decimal2 = input.nextInt();
+                String Octal = Integer.toOctalString(Decimal2);
+                System.out.println("Octal = "+Octal);
                 break;
             case 3:
+                System.out.print("Enter Decimal Number: ");
+                int Decimal3 = input.nextInt();
+                String hexadecimal = Integer.toHexString(Decimal3);
+                System.out.println("Hexadecimal = " + hexadecimal);
+                break;
+            case 4:
                 System.out.print("Enter binary number: ");
                 String Binary = input.next();
                 int decimal = Integer.parseInt(Binary, 2);
