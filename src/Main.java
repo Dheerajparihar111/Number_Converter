@@ -5,6 +5,7 @@ class Homepage{
         System.out.println(" 2) Decimal To Octal");
         System.out.println(" 3) Decimal To Hexadecimal");
         System.out.println(" 4) Binary To Decimal");
+        System.out.println(" 5) Octal To Decimal");
         System.out.print("Enter Your Choice : ");
     }
 }
@@ -37,10 +38,15 @@ public class Main {
             case 4:
                 System.out.print("Enter binary number: ");
                 String Binary = input.next();
-                int decimal = Integer.parseInt(Binary, 2);
-                System.out.println("Decimal = " + decimal);
+                int binaryToDecimal = Integer.parseInt(Binary, 2);
+                System.out.println("Decimal = " + binaryToDecimal);
                 break;
-
+            case 5:
+                System.out.println("Enter Octal Number");
+                String octal = input.next();
+                int octalToDecimal = Integer.parseInt(octal,8);
+                System.out.println("Decimal = "+octalToDecimal);
+                break;
 
         }
     }
