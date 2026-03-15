@@ -6,6 +6,7 @@ class Homepage{
         System.out.println(" 3) Decimal To Hexadecimal");
         System.out.println(" 4) Binary To Decimal");
         System.out.println(" 5) Octal To Decimal");
+        System.out.println(" 6) Hexadecimal To Decimal");
         System.out.print("Enter Your Choice : ");
     }
 }
@@ -32,8 +33,8 @@ public class Main {
             case 3:
                 System.out.print("Enter Decimal Number: ");
                 int Decimal3 = input.nextInt();
-                String hexadecimal = Integer.toHexString(Decimal3);
-                System.out.println("Hexadecimal = " + hexadecimal);
+                String Hexadecimal = Integer.toHexString(Decimal3);
+                System.out.println("Hexadecimal = " + Hexadecimal);
                 break;
             case 4:
                 System.out.print("Enter binary number: ");
@@ -46,6 +47,12 @@ public class Main {
                 String octal = input.next();
                 int octalToDecimal = Integer.parseInt(octal,8);
                 System.out.println("Decimal = "+octalToDecimal);
+                break;
+            case 6:
+                System.out.println("Enter Hexadecimal Number");
+                String hexadecimal = input.next();
+                int hexadecimalToDecimal = Integer.parseInt(hexadecimal,16);
+                System.out.println("Decimal = "+ hexadecimalToDecimal);
                 break;
 
         }
