@@ -1,7 +1,7 @@
 import java.util.*;
 class Homepage{
     void Homepage(){
-        System.out.println("=___________________________");
+        System.out.println("_____________________________");
         System.out.println("| 1) Decimal To Binary      |");
         System.out.println("| 2) Decimal To Octal       |");
         System.out.println("| 3) Decimal To Hexadecimal |");
@@ -17,19 +17,20 @@ public class Main {
     static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         Homepage homepage = new Homepage();
+        System.out.println("***********Wel-Come To Number Converter ***********");
         while (true){
         homepage.Homepage();
         int choice = input.nextInt();
         switch (choice) {
 
             case 1:
-                System.out.println("Enter The Decimal Number");
+                System.out.print("Enter The Decimal Number :");
                 int Decimal1 = input.nextInt();
                 String binary = Integer.toBinaryString(Decimal1);
                 System.out.println("Binary =" + binary);
                 break;
             case 2:
-                System.out.println("Enter The Decimal Number ");
+                System.out.print("Enter The Decimal Number :");
                 int Decimal2 = input.nextInt();
                 String Octal = Integer.toOctalString(Decimal2);
                 System.out.println("Octal = " + Octal);
@@ -47,13 +48,13 @@ public class Main {
                 System.out.println("Decimal = " + binaryToDecimal);
                 break;
             case 5:
-                System.out.println("Enter Octal Number");
+                System.out.print("Enter Octal Number :");
                 String octal = input.next();
                 int octalToDecimal = Integer.parseInt(octal, 8);
                 System.out.println("Decimal = " + octalToDecimal);
                 break;
             case 6:
-                System.out.println("Enter Hexadecimal Number");
+                System.out.print("Enter Hexadecimal Number :");
                 String hexadecimal = input.next();
                 int hexadecimalToDecimal = Integer.parseInt(hexadecimal, 16);
                 System.out.println("Decimal = " + hexadecimalToDecimal);
