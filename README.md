@@ -111,6 +111,7 @@ Enter decimal number: 10
 
 Binary = 1010
 ```
+<img width="1916" height="1025" alt="Number Converter output 1" src="https://github.com/user-attachments/assets/17518980-fb22-4102-92b0-3eed78f72371" />
 
 ---
 
